@@ -1,0 +1,27 @@
+Instale o gmsh, Elmer, root e o Garfield
+
+Para gerar os arquivos do gmsh execute:
+
+gmsh GEM_example.geo -3 -order 2 -optimize
+
+Faça então:
+
+ElmerGrid 14 2 GEM_example.msh 
+
+Copie os arquivos da pasta gerada(GEM_example) para o diretório do arquivo .sif
+
+Faça:
+
+ElmerSolver Field.sif
+
+e
+
+ElmerSolver Field_WTlel.sif
+
+Gerados todo os arquivos execute no terminal o comando 'make'
+
+e rode o exemplo do garfield com './completeavalanche'
+
+
+
+
