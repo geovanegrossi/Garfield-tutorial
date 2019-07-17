@@ -1,27 +1,60 @@
-Instale o gmsh, Elmer, root e o Garfield
 
-Para gerar os arquivos do gmsh execute:
+Instale o gmsh, Elmer, root e o Garfield++
 
-gmsh GEM_example.geo -3 -order 2 -optimize
+O arquivo contendo a geometria do problema é o GEM_example.geo.
 
-Faça então:
+Crie a lista de arquivos .msh para uso no Elmer com o seguinte comando:
 
-ElmerGrid 14 2 GEM_example.msh 
+	gmsh GEM_example.geo -3 -order 2 -optimize
+
+Faça a conversão desse arquivo para o formato lido pelo Elmer com o comando:
+
+	ElmerGrid 14 2 GEM_example.msh 
 
 Copie os arquivos da pasta gerada(GEM_example) para o diretório do arquivo .sif
 
-Faça:
+Para resolver o problema pelo método de elementos fínito no Elmer execute o comando:
 
-ElmerSolver Field.sif
+	ElmerSolver Field.sif
 
-e
+e também:
 
-ElmerSolver Field_WTlel.sif
+	ElmerSolver Field_WTlel.sif
 
-Gerados todo os arquivos execute no terminal o comando 'make'
+Então faça:
 
-e rode o exemplo do garfield com './completeavalanche'
+	make
 
+	./completeavalanche
+
+//----------------------------------------------------------------------------------------
+
+
+Install gmsh, Elmer, root and Garfield++
+
+The geometry file is the GEM_example.geo.
+
+Create your file .msh to be used with Elmer with the following terminal command:
+
+	gmsh GEM_example.geo -3 -order 2 -optimize
+
+Convert the file executing the command:
+
+	ElmerGrid 14 2 GEM_example.msh 
+
+Copy all files from the new directory(GEM_example) to the .sif file directory 
+
+To solve the finity element method execute:
+
+	ElmerSolver Field.sif
+
+also:
+
+	ElmerSolver Field_WTlel.sif
+
+than:
+	make
+	./completeavalanche
 
 
 
