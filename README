@@ -9,7 +9,7 @@ Crie a lista de arquivos .msh para uso no Elmer com o seguinte comando:
 
 Faça a conversão desse arquivo para o formato lido pelo Elmer com o comando:
 
-	ElmerGrid 14 2 GEM_example.msh 
+	ElmerGrid 14 2 GEM_example.msh -autoclean
 
 Copie os arquivos da pasta gerada(GEM_example) para o diretório do arquivo .sif
 
@@ -40,7 +40,7 @@ Create your file .msh to be used with Elmer with the following terminal command:
 
 Convert the file executing the command:
 
-	ElmerGrid 14 2 GEM_example.msh 
+	ElmerGrid 14 2 GEM_example.msh -autoclean
 
 Copy all files from the new directory(GEM_example) to the .sif file directory 
 
