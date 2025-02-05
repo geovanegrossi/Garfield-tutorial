@@ -77,10 +77,10 @@
 		ViewField * vf = new ViewField();
 		vf->SetComponent(elm);
 		vf->SetArea(-0.01*axis_x,-0.01*axis_y,0.01*axis_x,0.01*axis_y);	
-		vf->SetNumberOfSamples2d(300,300);
+		vf->SetNumberOfSamples2d(300,600);
 		vf->SetPlane(0,-1,0,0,0,0);
 		vf->SetCanvas(eField);
-		vf->PlotContour("e");	//a opção "v" faz o potencial
+		vf->PlotContour("v");	//a opção "v" faz o potencial
 		eField->Draw();
 		//eField->SaveAs("electric_field.pdf");
 
@@ -92,7 +92,7 @@
 		pf->SetNumberOfContours(40);
 		pf->SetPlane(0,1,0,0,0,0);
 		pf->SetCanvas(eProfileElectricField);
-		pf->PlotProfile(0,0,-0.5*axis_z,0,0,0.5*axis_z,"e");
+		pf->PlotProfile(0,0,-axis_z,0,0,axis_z,"e");
 		//~ eProfileElectricField->SaveAs("EletricProfile.pdf");
 	   
 

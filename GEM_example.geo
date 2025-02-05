@@ -327,67 +327,67 @@ Plane Surface(121) = {125};
 //+
 Line Loop(126) = {32, 76, -36, 83};
 //+
-Ruled Surface(122) = {126};
+Surface(122) = {126};
 //+
 Line Loop(127) = {76, 33, -85, -29};
 //+
-Ruled Surface(123) = {127};
+Surface(123) = {127};
 //+
 Line Loop(128) = {83, -31, 73, 35};
 //+
-Ruled Surface(124) = {128};
+Surface(124) = {128};
 //+
 Line Loop(129) = {73, -34, -85, 30};
 //+
-Ruled Surface(125) = {129};
+Surface(125) = {129};
 //+
 Line Loop(130) = {86, 38, -74, -34};
 //+
-Ruled Surface(126) = {130};
+Surface(126) = {130};
 //+
 Line Loop(131) = {35, -82, -39, -74};
 //+
-Ruled Surface(127) = {131};
+Surface(127) = {131};
 //+
 Line Loop(132) = {82, 36, 77, -40};
 //+
-Ruled Surface(128) = {132};
+Surface(128) = {132};
 //+
 Line Loop(133) = {77, 37, -86, -33};
 //+
-Ruled Surface(129) = {133};
+Surface(129) = {133};
 //+
 Line Loop(134) = {39, -81, 44, -75};
 //+
-Ruled Surface(130) = {134};
+Surface(130) = {134};
 //+
 Line Loop(135) = {40, 78, 43, 81};
 //+
-Ruled Surface(131) = {135};
+Surface(131) = {135};
 //+
 Line Loop(136) = {37, 87, 42, -78};
 //+
-Ruled Surface(132) = {136};
+Surface(132) = {136};
 //+
 Line Loop(137) = {38, 75, 41, -87};
 //+
-Ruled Surface(133) = {137};
+Surface(133) = {137};
 //+
 Line Loop(138) = {41, 88, 46, -84};
 //+
-Ruled Surface(134) = {138};
+Surface(134) = {138};
 //+
 Line Loop(139) = {44, 84, 47, 80};
 //+
-Ruled Surface(135) = {139};
+Surface(135) = {139};
 //+
 Line Loop(140) = {80, -43, 79, -48};
 //+
-Ruled Surface(136) = {140};
+Surface(136) = {140};
 //+
 Line Loop(141) = {88, -45, -79, -42};
 //+
-Ruled Surface(137) = {141};
+Surface(137) = {141};
 //+
 Surface Loop(1) = {92, 96, 95, 94, 90, 97, 123, 122, 124, 125, 129, 128, 127, 130, 131, 132, 133, 126, 113, 112, 109, 110, 111, 104, 134, 137, 136, 135};
 //+
@@ -421,38 +421,12 @@ Physical Volume(4) = {4};
 //------------------------------------------------------------------------------------------------------------------------------
 //Physical surfaces
 
-Physical Surface(142) = {90};  //cathode
+Physical Surface(1) = {90};  //cathode
 
-Physical Surface(143) = {99}; //Top electrode
-Physical Surface(144) = {100}; //Top electrode
-Physical Surface(145) = {101}; //Top electrode
-Physical Surface(146) = {102}; //Top electrode
-Physical Surface(147) = {97}; //Top electrode
-Physical Surface(148) = {98}; //Top electrode
-Physical Surface(149) = {122}; //Top electrode
-Physical Surface(150) = {123}; //Top electrode
-Physical Surface(151) = {124}; //Top electrode
-Physical Surface(152) = {125}; //Top electrode
+Physical Surface(2) = {97,122,123,124,125}; //Top electrode
 
-Physical Surface(153) = {103}; //Bottom electrode
-Physical Surface(154) = {104}; //Bottom electrode
-Physical Surface(155) = {118}; //Bottom electrode
-Physical Surface(156) = {106}; //Bottom electrode
-Physical Surface(157) = {105}; //Bottom electrode
-Physical Surface(158) = {107}; //Bottom electrode
-Physical Surface(159) = {134}; //Bottom electrode
-Physical Surface(160) = {135}; //Bottom electrode
-Physical Surface(161) = {136}; //Bottom electrode
-Physical Surface(162) = {137}; //Bottom electrode
+Physical Surface(3) = {104,134,135,136,137}; //Bottom electrode
 
-Physical Surface(163) = {113};  //anode
-
-//Side boundaries 
-
-Physical Surface(201) = {95, 102, 121, 115, 105, 109}; //side 1 
-Physical Surface(202) = {92, 100, 119, 120, 107, 111};	//side 2, oposite to 1
-
-Physical Surface(203) = {94, 101, 117, 116, 118, 110};	//side 3	
-Physical Surface(204) = {96, 99, 108, 114, 106, 112};	//side 4, oposite to 3
+Physical Surface(4) = {113};  //anode
 
 
