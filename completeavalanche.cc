@@ -37,12 +37,12 @@
 		char* ionpos = new char[150];
 
 		//coloque aqui o diretório de cada um dos arquivos
-		sprintf(result,"Field.result"); 	
-		sprintf(elements,"mesh.elements");
-		sprintf(nodes,"mesh.nodes");
-		sprintf(header,"mesh.header");
-		sprintf(wtlel,"Field_WTlel.result");
-		sprintf(dielectrics,"dielectrics.dat");
+		sprintf(result,"/home/geovaneg/Documents/Garfield-tutorial/standard_GEM/Field.result"); 	
+		sprintf(elements,"/home/geovaneg/Documents/Garfield-tutorial/standard_GEM/mesh.elements");
+		sprintf(nodes,"/home/geovaneg/Documents/Garfield-tutorial/standard_GEM/mesh.nodes");
+		sprintf(header,"/home/geovaneg/Documents/Garfield-tutorial/standard_GEM/mesh.header");
+		sprintf(wtlel,"/home/geovaneg/Documents/Garfield-tutorial/standard_GEM/Field_WTlel.result");
+		sprintf(dielectrics,"../dielectrics.dat");			
 			
 		//cria arquivos para guardar a posição inicial, final e status dos elétrons e dos íons
 		sprintf(electronpos,"electronposition.txt");
@@ -78,7 +78,7 @@
 
 						
 		// Importa os arquivos do Elmer para serem utilizados
-		ComponentElmer * elm = new ComponentElmer(header,elements,nodes,dielectrics,result,"micron"); //load em todos os mesh gerados pelo gmsh e .result do elmer
+		ComponentElmer * elm = new ComponentElmer(header,elements,nodes,dielectrics,result,"m"); //load em todos os mesh gerados pelo gmsh e .result do elmer
 		elm->EnableMirrorPeriodicityY();		//Periodicidade espelhada em X
 		elm->EnableMirrorPeriodicityX();		//Periodicidade espelhada em Y
 		elm->SetWeightingField(wtlel,"wtlel");	//.result do WTlel field
@@ -118,7 +118,7 @@
 		
 		double xi=0;		//posição inicial dos elétrons soltos na simulação
 		double yi=0;
-		double zi=0.049;	
+		double zi=0.029;	
 
 		
 		int nAva=5; //Número de avalanches unicas
