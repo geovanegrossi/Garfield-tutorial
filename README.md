@@ -26,7 +26,8 @@ Então faça:
 	cmake ..
 	make
 
-Confira os campos utilizando:
+
+>[!IMPORTANT] Confira os campos utilizando:
 	./viewfield
 
 Para calcular uma avalanche use:
@@ -64,7 +65,8 @@ than:
 	cmake ..
 	make
 
-Look to the fields using:
+
+>[!IMPORTANT] Look to the fields using:
 	./viewfield
 
 To calculate an avalanche:
