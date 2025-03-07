@@ -26,8 +26,8 @@ Então faça:
 	cmake ..
 	make
 
-
->[!IMPORTANT] Confira os campos utilizando:
+>[!IMPORTANT]
+> Confira os campos utilizando:
 	./viewfield
 
 Para calcular uma avalanche use:
@@ -35,7 +35,6 @@ Para calcular uma avalanche use:
 
 Modifique o que quiser e se divirta!
 
-//----------------------------------------------------------------------------------------
 
 
 # Install gmsh, Elmer, root and Garfield++
@@ -66,7 +65,8 @@ than:
 	make
 
 
->[!IMPORTANT] Look to the fields using:
+>[!IMPORTANT]
+>Look to the fields using:
 	./viewfield
 
 To calculate an avalanche:
