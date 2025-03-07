@@ -1,17 +1,17 @@
 
 Instale o gmsh, Elmer, root e o Garfield++
 
-O arquivo contendo a geometria do problema é o GEM_example.geo.
+O arquivo contendo a geometria do problema é o standard_GEM.geo.
 
 Crie a lista de arquivos .msh para uso no Elmer com o seguinte comando:
 
-	gmsh GEM_example.geo -3 -order 2 -optimize
+	gmsh standard_GEM.geo -3 -order 2 -optimize
 
 Faça a conversão desse arquivo para o formato lido pelo Elmer com o comando:
 
-	ElmerGrid 14 2 GEM_example.msh 
+	ElmerGrid 14 2 standard_GEM.msh 
 
-Copie os arquivos da pasta gerada(GEM_example) para o diretório do arquivo .sif
+Copie os arquivos da pasta gerada(standard_GEM) para o diretório do arquivo .sif
 
 Para resolver o problema pelo método de elementos fínito no Elmer execute o comando:
 
@@ -32,17 +32,17 @@ Então faça:
 
 Install gmsh, Elmer, root and Garfield++
 
-The geometry file is the GEM_example.geo.
+The geometry file is the standard_GEM.geo.
 
 Create your file .msh to be used with Elmer with the following terminal command:
 
-	gmsh GEM_example.geo -3 -order 2 -optimize
+	gmsh standard_GEM.geo -3 -order 2 -optimize
 
 Convert the file executing the command:
 
-	ElmerGrid 14 2 GEM_example.msh 
+	ElmerGrid 14 2 standard_GEM.msh 
 
-Copy all files from the new directory(GEM_example) to the .sif file directory 
+Copy all files from the new directory(standard_GEM) to the .sif file directory 
 
 To solve the finity element method execute:
 
