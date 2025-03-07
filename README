@@ -1,9 +1,9 @@
 
-Instale o gmsh, Elmer, root e o Garfield++
+# Instale o gmsh, Elmer, root e o Garfield++
 
 O arquivo contendo a geometria do problema é o standard_GEM.geo.
 
-Crie a lista de arquivos .msh para uso no Elmer com o seguinte comando:
+## Crie a lista de arquivos .msh para uso no Elmer com o seguinte comando:
 
 	gmsh standard_GEM.geo -3 -order 2 -optimize
 
