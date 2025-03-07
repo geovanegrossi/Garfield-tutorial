@@ -25,6 +25,7 @@ Então faça:
 
 	mkdir build && cd build
 	cmake ..
+	make
 	./completeavalanche
 
 //----------------------------------------------------------------------------------------
@@ -55,6 +56,7 @@ also:
 than:
 	mkdir build && cd build
 	cmake ..
+	make
 	./completeavalanche
 
 
